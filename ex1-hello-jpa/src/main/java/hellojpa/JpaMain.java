@@ -4,6 +4,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
+import java.util.ArrayList;
 import java.util.List;
 
 public class JpaMain {
@@ -19,7 +20,7 @@ public class JpaMain {
 //            Member findMember = em.find(Member.class,1L);
             Member member=em.find(Member.class,150L);
 
-            member.setName("hhh");
+            ArrayList<Integer> list = new ArrayList<Integer>();
 
             em.persist(member);
 
