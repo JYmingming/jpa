@@ -28,7 +28,7 @@ public class JpaMain {
 
             em.persist(book);
 
-            em.remove(book);
+
 
             tx.commit(); //Transaction commit
         } catch (Exception e){
@@ -40,3 +40,4 @@ public class JpaMain {
         emf.close(); //EntityManagerFactory close
     }
 }
+
